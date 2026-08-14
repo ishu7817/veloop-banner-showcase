@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+@theme {
+  --color-veloopBg: #161827;
+  --color-veloopCard: #1E2138;
+  --color-veloopAccent: #3B82F6;
+  --color-veloopGold: #F59E0B;
+}
+
+body {
+  background-color: #161827;
+  color: #ffffff;
+  min-height: 100vh;
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}

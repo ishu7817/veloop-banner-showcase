@@ -6,7 +6,7 @@ A set of 5 interactive, animated banner components built for the VELOOP Rewards 
 
 ## 🔗 Links
 
-- **Live Demo:** [Check it out on Vercel](https://veloop-banner-showcase.vercel.app/) *(drop your vercel link here)*
+- **Live Demo:** [Check it out on Vercel](https://veloop-banner-showcase.vercel.app/)
 - **Source Code:** [GitHub Repo](https://github.com/ishu7817/veloop-banner-showcase)
 
 ---

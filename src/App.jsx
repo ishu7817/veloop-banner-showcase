@@ -1,6 +1,9 @@
 import React from 'react';
 import { LeaderboardBanner } from './components/banners/LeaderboardBanner';
-
+import { WatchAdBanner } from './components/banners/WatchAdBanner';
+import { ContactBanner } from './components/banners/ContactBanner';
+import { FollowEarnBanner } from './components/banners/FollowEarnBanner';
+import { DailyBonusBanner } from './components/banners/DailyBonusBanner';
 
 export default function App() {
   return (
@@ -15,7 +18,10 @@ export default function App() {
       </header>
 
       <LeaderboardBanner />
-     
+      <WatchAdBanner />
+      <ContactBanner />
+      <FollowEarnBanner />
+      <DailyBonusBanner />
     </main>
   );
 }

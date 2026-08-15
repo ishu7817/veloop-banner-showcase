@@ -1,16 +1,63 @@
-# React + Vite
+# VELOOP Rewards — Interactive Banners & Cards
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A set of 5 interactive, animated banner components built for the VELOOP Rewards platform. Designed to fit the `#161827` dark theme with custom micro-interactions, responsive scaling, and zero clunky dependencies.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🔗 Links
 
-## React Compiler
+- **Live Demo:** [Check it out on Vercel](https://veloop-banner-showcase.vercel.app/) *(drop your vercel link here)*
+- **Source Code:** [GitHub Repo](https://github.com/ishu7817/veloop-banner-showcase)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 💡 What's Inside
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+| Component | What it does | Interactions / Details |
+|---|---|---|
+| **Leaderboard** | Competitive ranking card | Top 3 podium badges (#1, #2, #3), live VE points & tier cards |
+| **Watch Ad & Earn** | Video reward card | Animated play trigger with simulated reward state (`+38 VEs`) |
+| **Contact Us** | Support & trust card | 24h response badge & direct mailto link |
+| **Follow & Earn** | Social community growth | Interactive social channels with live toggle states (`+500 VEs`) |
+| **Daily Bonus** | Retention & daily streak | 5-day streak tracker with dynamic claim button (`+25 Gems`) |
+
+---
+
+## 📐 Layout & Dimensions
+
+Every banner fills 100% width of its parent container and respects specific device height ranges:
+
+- **Desktop:** 410px – 450px
+- **Tablet:** 380px – 540px
+- **Mobile:** 330px – 520px
+- **Palette:** Built over `#161827` with deep navy surfaces (`#1E2138`) and subtle gold/blue accents.
+
+---
+
+## 🛠️ Stack
+
+- **React + Vite**
+- **Tailwind CSS**
+- **Framer Motion** (for smooth hover physics & entry transitions)
+- **Lucide React** (plus custom SVG helpers)
+
+---
+
+## 📁 Project Structure
+
+```text
+src/
+├── components/
+│   ├── banners/
+│   │   ├── LeaderboardBanner.jsx
+│   │   ├── WatchAdBanner.jsx
+│   │   ├── ContactBanner.jsx
+│   │   ├── FollowEarnBanner.jsx
+│   │   └── DailyBonusBanner.jsx
+│   └── ui/
+│       ├── BannerCard.jsx      # Reusable responsive container
+│       └── Icons.jsx           # Clean social SVG icons
+├── data/
+│   └── Data.js                 # Leaderboard & social configs
+├── App.jsx                     # Main page wrapper
+└── index.css                   # Tailwind v4 configuration
